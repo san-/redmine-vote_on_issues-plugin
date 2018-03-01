@@ -1,4 +1,4 @@
-module VoteOnIssuesHooks
+module WeightOnIssuesHooks
   class Hooks < Redmine::Hook::ViewListener
       # :partial => <path>
       #     path is relative to plugins/plugin_name/app/views
@@ -13,7 +13,7 @@ module VoteOnIssuesHooks
         # <div class="splitcontent">
           # <div class="splitcontentleft">
             # <div class="status attribute">
-              # <div class="label">Votes:</div>
+              # <div class="label">weights:</div>
               # <div class="value">Ha!</div>
             # </div>
           # </div>
@@ -58,7 +58,7 @@ end
 #   <div class="splitcontent">
 #     <div class="splitcontentleft">
 #       <div class="status attribute">
-#         <div class="label">Votes:</div>
+#         <div class="label">weights:</div>
 #         <div class="value">Ha!</div>
 #       </div>
 #     </div>
