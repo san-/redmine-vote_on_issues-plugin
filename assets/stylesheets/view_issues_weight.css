@@ -1,0 +1,31 @@
+/**
+**
+** general
+**
+**/
+div.weight_on_issues-issue-weights-nowrap {
+    white-space:nowrap;
+    float: left;
+}
+/**
+**
+** MY weight
+**
+**/
+span.weight_on_issues-my-weight {
+    clear:left;
+}
+img.weight_on_issues-icon-weights {
+    width:0.8em;
+    height:0.8em;
+    margin-left:0.2em;
+    margin-right:0.8em;
+}    
+.weight_on_issues-icon-weight {
+    text-decoration: none !important;
+}
+img.weight_on_issues-icon-weight {
+    margin-left:0.2em;
+    width:0.8em;
+    height:0.8em;
+}

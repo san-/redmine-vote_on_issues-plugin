@@ -1,0 +1,2 @@
+module WeightOnIssuesHelper
+end

@@ -1,0 +1,5 @@
+<% if User.current.allowed_to?(:view_weights, nil, :global => true) %>
+    weight_on_issues.showWeightsOnIssue(<%= @weight %>);
+<% end %>
+
+weight_on_issues.showMyWeight(<%= @iMyWeight %>);
