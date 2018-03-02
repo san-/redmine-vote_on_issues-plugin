@@ -15,6 +15,11 @@ Developed on Redmine 3.3.4
   * Extract into Redmine's plugin directory <tt><redmine_path>/plugins</tt>
   
   * Rename the <tt>redmine-weight_on_issues-plugin-x.y.z</tt> directory to <tt>weight_on_issues</tt>
+
+  * Execute: 
+  ```
+  bundle exec rake redmine:plugins:migrate RAILS_ENV=production 
+  ```
   
   * Restart Redmine
   
