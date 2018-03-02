@@ -1,5 +1,4 @@
 <% if @project.module_enabled?(:weight_on_issues) %>
-
   <div class="splitcontent">
     <% if authorize_for('issues', 'view_weight') %>
       <div class="splitcontentleft">
@@ -12,7 +11,7 @@
             </div>
             
             <script>
-              weight_on_issues.showWeightsOnIssue(<%= WeightOnIssue.getWeightCountOnIssue(@issue.id) %>);
+              weight_on_issues.showWeightsOnIssue(<%= WeightOnIssue.getWeightSumOnIssue(@issue.id) %>);
             </script>
           </div>
         </div>

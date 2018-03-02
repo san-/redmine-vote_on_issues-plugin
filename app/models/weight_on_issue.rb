@@ -10,13 +10,13 @@ class WeightOnIssue < ActiveRecord::Base
     begin
      @weight = WeightOnIssue.find_by!("issue_id = ? AND user_id = ?", issue.id, User.current.id)
      iRet = @weight.weight_val
-    rescue WeightOnIssue::RecordNotFound
+    rescue
      iRet = 0
     end
     iRet
   end
   
-  def self.getWeightCountOnIssue(issue_id)
+  def self.getWeightSumOnIssue(issue_id)
     where("issue_id = ?", issue_id).sum('weight_val')
   end
   

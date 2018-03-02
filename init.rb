@@ -19,8 +19,8 @@ Redmine::Plugin.register :weight_on_issues do
   requires_redmine  :version_or_higher => '3.3.4'
   
   project_module :weight_on_issues do
-    permission :cast_weights, {:issues => :cast_weights }, :require => :loggedin
-    permission :view_weights, {:issues => :view_weights}, :require => :loggedin
+    permission :cast_weights, {:issues => :cast_weight}, :require => :loggedin
+    permission :view_weights, {:issues => :view_weight}, :require => :loggedin
   end
 
  

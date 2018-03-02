@@ -33,7 +33,7 @@ class WeightOnIssuesController < ApplicationController
       end
     end
     
-    @weight = WeightOnIssue.getWeightCountOnIssue(params[:issue_id])
+    @weight = WeightOnIssue.getWeightSumOnIssue(params[:issue_id])
     @issue = Issue.find(params[:issue_id])
     
     # Auto loads /app/views/weight_on_issues/cast_weight.js.erb

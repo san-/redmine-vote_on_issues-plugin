@@ -8,12 +8,15 @@ pt-BR:
   permission_cast_weights: "Alterar peso de tarefas"  
   permission_view_weights: "Ver pesos"
     
-  view_issues_label_weights: "Peso"
- 
+  view_issues_label_weight: "Peso"
+   
   view_issues_my_weight: "Meu peso"
   view_issues_my_weight_opt: "Alterar"
+  
   
   view_issues_my_weight_opt_up: "Vote"
 
   field_sum_weights: "Peso"
+  
+
   
