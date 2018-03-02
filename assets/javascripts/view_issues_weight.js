@@ -11,12 +11,10 @@ var weight_on_issues = {
     
     // ALL WEIGHT
     , showWeightsOnIssue: function(iWeight){
-        console.log('showWeightsOnIssue:'+iWeight);
         $('#weight_on_issues_weight').html(iWeight);
     }
     // MY VOTE
     , showMyWeight : function(iUserWeight){
-        console.log('showMyWeight:'+weight);
         $('#weight_on_issues_MyWeight').val(iUserWeight);
     }
 };

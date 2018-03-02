@@ -7,7 +7,7 @@ class CreateWeightOnIssues < ActiveRecord::Migration
       t.references :user, index: true, foreign_key: true
       t.integer :weight_val
     end
-    //add_index :weight_on_issues, [:issue_id, :user_id], unique: true
+    # add_index :weight_on_issues, [:issue_id, :user_id], unique: true
   end
   
   def self.down

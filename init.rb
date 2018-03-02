@@ -9,7 +9,7 @@ Issue.send(:include, WeightOnIssues::Patches::QueryPatch)
 
 
 Redmine::Plugin.register :weight_on_issues do
-  name 'Issues Weight'
+  name 'Weight On Issues'
   description 'This plugin allows to define a weight to issue. It\'s pourpose is to help on priority definition'
   version '1.0.0'
   url 'https://github.com/san-/redmine-weight_on_issues-plugin'
@@ -19,8 +19,8 @@ Redmine::Plugin.register :weight_on_issues do
   requires_redmine  :version_or_higher => '3.3.4'
   
   project_module :weight_on_issues do
-    permission :cast_weights, {:issue => :cast_weights }, :require => :loggedin
-    permission :view_weights, {:issue => :view_weights}, :require => :loggedin
+    permission :cast_weights, {:issues => :cast_weights }, :require => :loggedin
+    permission :view_weights, {:issues => :view_weights}, :require => :loggedin
   end
 
  

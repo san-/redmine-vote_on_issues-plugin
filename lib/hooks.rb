@@ -13,7 +13,7 @@ module WeightOnIssuesHooks
         # <div class="splitcontent">
           # <div class="splitcontentleft">
             # <div class="status attribute">
-              # <div class="label">weights:</div>
+              # <div class="label">Weights:</div>
               # <div class="value">Ha!</div>
             # </div>
           # </div>
@@ -58,7 +58,7 @@ end
 #   <div class="splitcontent">
 #     <div class="splitcontentleft">
 #       <div class="status attribute">
-#         <div class="label">weights:</div>
+#         <div class="label">Weights:</div>
 #         <div class="value">Ha!</div>
 #       </div>
 #     </div>

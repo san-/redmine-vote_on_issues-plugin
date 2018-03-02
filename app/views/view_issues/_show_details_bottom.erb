@@ -1,7 +1,7 @@
 <% if @project.module_enabled?(:weight_on_issues) %>
 
   <div class="splitcontent">
-    <% if authorize_for('weight', 'view_weight') %>
+    <% if authorize_for('issues', 'view_weight') %>
       <div class="splitcontentleft">
         <div class="status attribute">
           <div class="label"><%= l(:view_issues_label_weight) %>:</div>
@@ -19,7 +19,7 @@
       </div>
     <% end %>
   
-    <% if authorize_for('weight', 'cast_weight') && (!User.current.admin?) %>
+    <% if authorize_for('issues', 'cast_weight') && (!User.current.admin?) %>
       <div class="splitcontentleft">
         <div class="status attribute">
           <div class="label"><%= l(:view_issues_my_weight) %>:</div>
